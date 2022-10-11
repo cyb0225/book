@@ -1,0 +1,31 @@
+.book {
+    padding: 30px;
+    margin: auto;
+    height: 90%;
+    width: 60%;
+    background-color: #fff;
+}
+
+.title {
+    color: #454545;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.status {
+    font-size: 16px;
+    color: #ccc;
+    padding-bottom: 10px;
+}
+
+.comment-list {
+    margin: 10px;
+    border: solid 1px;
+}
+
+
+.comment {
+    margin: 10px;
+    border: solid 1px;
+}

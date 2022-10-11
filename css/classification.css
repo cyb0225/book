@@ -1,0 +1,14 @@
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.content > * {
+    padding-bottom: 20px;
+}
+
+.label {
+    padding: 20px
+}
+
+.
