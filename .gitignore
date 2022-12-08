@@ -1,1 +1,3 @@
-node_modules
+## IDE 配置文件
+.vscode
+.idea

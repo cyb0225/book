@@ -1,0 +1,75 @@
+body {
+    min-width: 720px;
+    background-color: #eee;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+}
+
+.header .logo {
+    font-size: 25px;
+    font-weight: 1000;
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+.header .logo a {
+    color: #120511;
+}
+
+.header .nav ul li  {
+    list-style: none;
+    white-space: nowrap;
+    float: right;
+    padding-right: 20px;
+}
+
+.header .nav ul li a {
+    font-size: 17px;
+    color: #000;
+}
+
+.header .nav ul li a:hover {
+    color: #655; 
+}
+
+.main {
+    padding: 10px;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    background: #eee;
+}
+
+.main .content {
+    padding: 30px;
+    margin: auto;
+    height: 90%;
+    width: 80%;  
+    min-height: 700px;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.footer {
+    height: 150px;
+    background: #565658;
+    color: #eee;
+    font-size: 40px;
+    font-weight: 1000;
+    text-align: center;
+    line-height: 60px;
+}
