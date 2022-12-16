@@ -7,45 +7,66 @@
     <link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./index.html">
+    <script defer src="js/carousel.js"></script>
+    <script  src="js/animate.js"></script>
     <title>程序员书评网站</title>
 </head>
 <body>
-    <div class="app">
-        <header class="header">
-            <div class="logo">
-                <a href="index.html">YeeBing</a>
-            </div>
-            <nav class="nav">
-                <ul class="item">
-                    <li>
-                        <a href="about.html">关于我</a>
-                    </li>
-                    <li>
-                        <a href="list.html">图书列表</a>
-                    </li>
-                    <li style="white-space: nowrap;">
-                        <a href="index.html">主页</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+<div class="app">
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">YeeBing</a>
+        </div>
+        <nav class="nav">
+            <ul class="item">
+                <li>
+                    <a href="about.html">关于我</a>
+                </li>
+                <li>
+                    <a href="list.html">图书列表</a>
+                </li>
+                <li style="white-space: nowrap;">
+                    <a href="index.html">主页</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div class="main">
         <div class="content">
-            <div class="news">
-                <h2>站内消息</h2>
-                <img src="images/站内消息.png" alt="站内消息">
+            <!-- 轮播图 -->
+            <div class="columnleft">
+                <div class="lunbotu" id="lunbotu">
+                    <a href="javascript:;" class="arrow-l">&lt;</a>
+                    <a href="javascript:;" class="arrow-r">></a>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="photo/scenery01.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="photo/scenery02.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="photo/scenery03.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="photo/scenery04.png" alt=""></a>
+                        </li>
+                    </ul>
+                    <ol class="circle">
+
+                    </ol>
+                </div>
             </div>
-            <div class="books">
-                <h2>最新书籍</h2>
-                <img src="images/最新书籍.jpg" alt="最新书籍">
+
+
+
+            <div class="news">
+               <img src="images/cover.jpg" alt="封面图" width="90%">
             </div>
             <div class="review">
-                <h2>推荐书籍</h2>
-                <img src="images/热门书评.png" alt="">
-            </div>
-            <div class="label">
-                <h2>热门标签</h2>
-                <img src="images/热门标签.jpg" alt="热门标签">
+
+                
             </div>
         </div>
         <style>
@@ -56,5 +77,4 @@
     </footer>
 </div>
 </body>
-<script src="../js/form.js"></script>
 </html>
