@@ -9,7 +9,6 @@
     <link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/about.css">
 	<link rel="stylesheet" href="./css/main.css">
-	<link rel="stylesheet" href="./css/resume.css">
 	<title>resume</title>
 </head>
 
@@ -32,18 +31,30 @@
 					</li>
 				</ul>
 			</nav>
+			<div class="login-btn-group">
+				<a class="btn login" href="login.html">登录</a>
+				<a class="btn signout" onclick="signout()">退出登录</a>
+			</div>
 		</header>
 		<div class="main">
 			<div class="content">
 				<!-- 网站介绍 -->
 				<h1>网站介绍</h1>
 				<div class="description-text">
-					hello world
+					<p>
+						本站初衷是想让更多的程序员爱上阅读。虽然现在各类教学视频层出不穷，但是我们不能只追求新技术，也要读一些经典著作来提升我们的内功。读书就是一个很好的方式，所以一起来读书吧。
+					</p>
+					<p>
+						该网站会介绍一些经典的书籍，出于版权考虑不会提供电子版下载方式。但是会评估这本书的阅读难度（入门还是提升），已怎么一种方式去阅读（当字典，还是通读）以及一些有关书籍的资料。
+					</p>
+					<p>
+						网站由我一个人的阅历来维护是困难的，所以只要你登录就可以提供好的书籍推荐。
+					</p>
 				</div>
 				<h1>关于我</h1>
-				<div class="description-text">
-					hello world
-				</div>
+				<p class="description-text">
+					本站的发起人，目前还未有offer，下面是本人的简历（照片属实），也请各位看官有好的岗位可以推荐给鄙人，月薪3k即可，本人感激不尽。
+				</p>
 				<!-- 简历 -->
 				<table width="600" height="80%" align="center" border="1">
 					<caption>
@@ -131,3 +142,5 @@
 	</div>
 </body>
 </html>
+
+<script src="js/main.js"></script>

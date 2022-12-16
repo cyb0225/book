@@ -1,12 +1,27 @@
-var inputArray = [...document.getElementsByClassName('input')]
-var submit = document.getElementsByClassName('submit')[0]
-submit.onclick = function () {
-    var li = inputArray[0].value + "#" + inputArray[1].value
+function submit() {
+    // 判断用户有没有登录
+    let a = localStorage.getItem('account')
+    if (a === null || a === '' ) {
+        alert('请先登录')
+        return 
+    }
 
-    var liArray = localStorage.getItem('liArray') ? localStorage.getItem('liArray') + "@" + li : li
-    console.log(liArray)
-    localStorage.setItem('liArray', liArray + "@" + li)
-    // inputArray.forEach((item) => {
-    //     console.log(item.value)
-    // })
+
+    // 设置表单数据
+    let formData = {
+        bookName: document.getElementsByClassName('book-name')[0].value,
+        author: document.getElementsByClassName('author')[0].value,
+        
+    }; 
+
+
+    console.log('提交表单', formData);
+    // 保存图片
+
+
+    // 保存json到数组
+
+
+    // 页面跳转
+    // window.location.href = './list.html'
 }
