@@ -21,5 +21,6 @@ function login() {
     // 将账号保存到localstorage中，用于判断用户是否登录
     localStorage.setItem('account', account);
 
-    window.location.href='../index.html';
+    window.history.go(-1);
+    // window.location.href='../index.html';
 }

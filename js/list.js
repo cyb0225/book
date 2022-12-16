@@ -1,3 +1,9 @@
+import { getBooks, setBooks } from "./util.js"
+
+getBooks();
+setBooks();
+
+
 var ul = document.getElementsByClassName('books')[0]
 
 if (localStorage.getItem('liArray')) {
