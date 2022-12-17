@@ -37,17 +37,32 @@
         </header>
         <div class="main">
             <div class="content">
-                <h1>新增书单</h1>
-                <form action="" class="book-form">
-                    书籍名称： <input class="input book-name" type="text"><br>
-                    作者姓名：<input class="input author" type="text"><br>
-                    作者简介: <textarea class="input author-intro" rows="3"></textarea><br>
-                    出版社信息：<input class="input publish-house" type="text"><br>
-                    作品发布时间：<input class="input publish-time" type="text"><br>
-                    市场价：<input class="input price" type="text"><br>
-                    总页数：<input class="input pages" type="text"><br>
-                    目录：<input class="input directory" type="text"><br>
-                    标签： <select class="input tag" name="cars">
+                <form action="" class="book-form"> 
+                    <h1 class="header-title">新增书单</h1>
+                    <span class="hint">书籍名称</span>
+                    <input class="input book-name" type="text">
+                    <span class="hint">书籍封面</span>
+                    <input class="input book-cover" type="text">
+                    <span class="hint">作者姓名</span>
+                    <input class="input author" type="text">
+                    <span class="hint">作者简介</span>
+                    <textarea class="input author-intro" rows="3"></textarea>
+                    <span class="hint">
+                        出版社信息
+                    </span>
+                    <input class="input publish-house" type="text">
+                    <span class="hint">
+                        作品发布时间
+                    </span>
+                    <input class="input publish-time" type="text">
+                    <span class="hint">市场价</span>
+                    <input class="input price" type="text">
+                    <span class="hint">总页数</span>
+                    <input class="input pages" type="text">
+                    <span class="hint">目录</span>
+                    <input class="input directory" type="text">
+                    <span class="hint">标签</span>
+                    <select class="input tag" name="cars">
                         <option value="saab">编程语言基础</option>
                         <option value="fiat">web开发</option>
                         <option value="audi">数据结构</option>
@@ -56,27 +71,40 @@
                         <option value="audi">编译原理</option>
                         <option value="audi">人工智能</option>
                         <option value="audi">其他</option>
-                    </select><br>
-                    阅读难度: <select class="input difficult" name="cars">
+                    </select>
+                    <span class="hint"> 阅读难度:</span>
+                    <select class="input difficult" name="cars">
                         <option value="saab">1</option>
                         <option value="fiat">2</option>
                         <option value="audi">3</option>
                         <option value="audi">4</option>
                         <option value="audi">5</option>
-                    </select><br>
-                    优选段落： <textarea class="input paragraph" rows="3"></textarea><br>
-                    内容简介：<textarea class="input content-intro" rows="3"></textarea><br>
-                    推荐阅读方式: <textarea class="input recommend" rows="3"></textarea><br>
-                    配套学习资料: <select class="input material-type" name="cars">
+                    </select>
+                    <span class="hint">评价等级</span>
+                    <select class="input access" id="accesss" name="cars">
+                        <option value="saab">1</option>
+                        <option value="fiat">2</option>
+                        <option value="audi">3</option>
+                        <option value="audi">4</option>
+                        <option value="audi">5</option>
+                    </select>
+                    <span class="hint">优选段落</span>
+                    <textarea class="input paragraph" rows="3"></textarea>
+                    <span class="hint">内容简介</span>
+                    <textarea class="input content-intro" rows="3"></textarea>
+                    <span class="hint">推荐阅读方式</span>
+                    <textarea class="input recommend" rows="3"></textarea>
+                    <span class="hint">配套学习资料</span>
+                    <select class="input material-type" name="cars">
                         <option value="saab">课程</option>
                         <option value="fiat">视频</option>
                         <option value="audi">博客</option>
                         <option value="audi">代码仓库</option>
                         <option value="audi">文档</option>
                     </select>
-                    <textarea class="input material" rows="1"></textarea><br>
-                    <br>
-                    <div class="submit" onclick="submit()">提交</div>
+                    <textarea class="input material" rows="1"></textarea>
+                    
+                    <div class="submit">提交</div>
                 </form>
             </div>
         </div>
@@ -88,5 +116,5 @@
 
 </html>
 
-<script src="./js/form.js"></script>
+<script type="module" src="./js/form.js"></script>
 <script src="js/main.js"></script>

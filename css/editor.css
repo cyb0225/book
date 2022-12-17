@@ -1,3 +1,9 @@
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #575757;
+}
+
 .book-from {
     display: flex;
     flex-direction: column;
