@@ -45,6 +45,13 @@ document.getElementsByClassName('directory')[0].innerHTML = book.directory;
 
 let deleteBtn = document.getElementsByClassName('delete')[0]
 deleteBtn.onclick = function () {
+    // 判断用户有没有登录
+    let a = localStorage.getItem('account')
+    if (a === null || a === '' ) {
+        alert('请先登录')
+        return 
+    }
+
     console.log('delete', id)
     let books = getBooks();
     books.splice(id, 1);
@@ -55,6 +62,15 @@ deleteBtn.onclick = function () {
 
 let editorBtn = document.getElementsByClassName('editor')[0]
 editorBtn.onclick = function () {
+
+    // 判断用户有没有登录
+    let a = localStorage.getItem('account')
+    if (a === null || a === '' ) {
+        alert('请先登录')
+        return 
+    }
+
+
     console.log('editor', id);
     // 页面跳转到更新的页面
     window.location.href = './editor.html?id=' + id;
